@@ -4,8 +4,6 @@ class Week {
 
         this.date = date;
        
-       
-
         this.sunday= [
 
             {
@@ -396,7 +394,7 @@ class Week {
 
    
     
-    s(hour, user, place) {
+    sUnday(hour, user, place) {
         
         this.sunday[hour].user = user;
         this.sunday[hour].place = place;
@@ -405,21 +403,13 @@ class Week {
     };
 
 
-    m (hour, user, place) {
-
-      
-
+    mOnday (hour, user, place) {
         this.monday[hour].user = user;
         this.monday[hour].place = place;
-        this.monday[hour].reserved = true;
-
-
-        
-
-        
+        this.monday[hour].reserved = true;    
     };
 
-    tu() {
+    tUsday() {
         
         this.tuesday[hour].user = user;
         this.tuesday[hour].place = place;
@@ -427,7 +417,7 @@ class Week {
 
     };
 
-    w(hour, user, place) {
+    wEdnesday(hour, user, place) {
         
         this.wednesday[hour].user = user;
         this.wednesday[hour].place = place;
@@ -435,7 +425,7 @@ class Week {
 
     };
 
-    th(hour, user, place) {
+    tHursday(hour, user, place) {
         
         this.thursday[hour].user = user;
         this.thursday[hour].place = place;
@@ -443,7 +433,7 @@ class Week {
 
     };
 
-    f(hour, user, place) {
+    fRiday(hour, user, place) {
         
         this.friday[hour].user = user;
         this.friday[hour].place = place;
@@ -451,7 +441,7 @@ class Week {
 
     };
 
-    s (hour, user, place) {
+    sAturday (hour, user, place) {
 
           
         this.saturday[hour].user = user;
