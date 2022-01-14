@@ -9,6 +9,10 @@ class Week {
         this.sunday= [
 
             {
+                disable: false
+            },
+
+            {
                 user: '',
                 place: '',
                 reserved: false
@@ -58,6 +62,11 @@ class Week {
         ]
         
         this.monday= [
+
+            {
+                disable: false
+            },
+
 
             {
                 user: '',
@@ -111,6 +120,11 @@ class Week {
         this.tuesday= [
 
             {
+                disable: false
+            },
+
+
+            {
                 user:'',
                 place:'',
                 reserved: false
@@ -160,6 +174,11 @@ class Week {
         ];
 
         this.wednesday= [
+
+            {
+                disable: false
+            },
+
 
             {
                 user: '',
@@ -213,6 +232,11 @@ class Week {
         this.thursday= [
 
             {
+                disable: false
+            },
+
+
+            {
                 user: '',
                 place:'',
                 reserved: false
@@ -262,6 +286,11 @@ class Week {
         ];
 
         this.friday= [
+
+            {
+                disable: false
+            },
+
 
             {
                 user: '',
@@ -430,6 +459,43 @@ class Week {
         this.saturday[hour].reserved = true;
 
     };
+
+
+    disableSunday(){
+        this.sunday[0].disable = true
+        return
+    }
+
+    disableMonday(){
+        this.monday[0].disable = true
+        return
+    }
+
+    disableTusday(){
+        this.tuesday[0].disable = true
+        return
+    }
+
+    disableWednesday(){
+        this.wednesday[0].disable = true
+        return
+    }
+
+    disableThursday(){
+        this.thursday[0].disable = true
+        return 
+    }
+
+    disableFriday(){
+        this.friday[0].disable = true
+        return
+    }
+
+    disableSaturday(){
+        this.saturday[0].disable = true
+        return
+    }
+
 
 
 
